@@ -1,0 +1,6 @@
+.tab{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
