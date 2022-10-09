@@ -1,3 +1,16 @@
-.light{
-    background-color:white;
-}
+body{
+    --navbar-scroll: transparent; 
+    --navbar-scroll-text: white !important;
+    --navbar-scroll-shadow: none;
+    font-family: Arial, Helvetica, sans-serif
+
+  }
+.navbar {
+    background-color: var(--navbar-scroll);
+    transition: background-color 1s ease;
+    -webkit-box-shadow: var(--navbar-scroll-shadow);
+    box-shadow: var(--navbar-scroll-shadow);
+  }
+  .navbar a{
+    color: var(--navbar-scroll-text)!important ;
+  }

@@ -11,7 +11,8 @@ export class IntroComponent implements OnInit {
 
   ngOnInit(): void {
       const target = document.querySelector('.name')
-      const text_items = document.querySelector('.tw')
+      setTimeout(() => {
+        const text_items = document.querySelector('.tw')
       const writer = new Typewriter(text_items, {
         loop: true,
         typeSpeed: 80,
@@ -37,6 +38,8 @@ export class IntroComponent implements OnInit {
         .changeOps({ deleteSpeed: 80 })
         .clear()
         .start()
+      }, 5000);
+      
 
         const onetime = new Typewriter(target, {
           loop: false,

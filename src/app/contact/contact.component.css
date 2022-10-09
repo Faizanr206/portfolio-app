@@ -2,3 +2,6 @@
     font-family: Arial, Helvetica, sans-serif
 
 }
+.form-control{
+    background-color: transparent !important;
+}

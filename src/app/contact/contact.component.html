@@ -1,40 +1,50 @@
 <div class="container mt-3">
-<form class="row g-3">
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">State</label>
-      <select id="inputState" class="form-select">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-12">
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </form>
+  <h1> Comment us</h1>
+  <div class="col-md-8">
+    <form class="row ml-2 g-2">
+      <div class="col-md-6 form-floating">
+        <input type="email" class="form-control" id="FirstName" placeholder="First Name">
+        <label for="FirstName" class="form-control">FirstName</label>
+      </div>
+      <div class="col-md-6 form-floating">
+        <input type="email" class="form-control" id="LastName" placeholder="Last Name">
+        <label for="LastName" class="form-control">LastName</label>
+      </div>
+        <div class="col-md-6 form-floating">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <label for="inputEmail4" class="form-control">Email</label>
+        </div>
+        <div class="col-md-6 form-floating">
+          <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+          <label for="inputAddress" class="form-control">Address</label>
+        </div>
+        <div class="col-md-4 form-floating">
+          <input type="text" class="form-control" id="inputCity" placeholder="City">
+          <label for="inputCity" class="form-control">City</label>
+        </div>
+        <div class="col-md-4 form-floating">
+          <input type="text" class="form-control" id="inputState" placeholder="State">
+          <label for="inputState" class="form-control">State</label>
+        </div>
+        <div class="col-md-4 form-floating">
+          <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+          <label for="inputZip" class="form-control">Zip</label>
+        </div>
+        <div class="col-md-12"></div>
+        <div class="col-md-6">
+        <label for="customRange3" class="form-label">Tell Us How Much You Liked</label>
+        <div data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+          {{mystore}}
+        </div>
+        <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3"  #store>
+      </div>
+        <div class="col-12 form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+  </div>
 </div>

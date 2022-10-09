@@ -3,7 +3,7 @@
     height: 100vh;
     position: relative;
     color: #fff;
-    font-family: Georgia, serif
+    font-family: Arial, Helvetica, sans-serif
   }
   #home{
     border: round;
@@ -14,7 +14,7 @@
   }
   
   .intro .overlay-itro {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: 0px;
@@ -41,9 +41,16 @@
     vertical-align: middle;
   }
   .bg-image {
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
+    background-size:cover;
+    background-position: center;
   }
-  
+  .name{
+    font-size: 4em;
+    /* text-shadow: 1px 1px 2px black, 0 0 15px #961115, 0 0 5px #5c0104; */
+  }
+  .tw{
+    font-size: 2em;
+    /* text-shadow: 1px 1px 2px black, 0 0 15px #961115, 0 0 5px #5c0104; */
+  }
