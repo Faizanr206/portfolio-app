@@ -11,12 +11,12 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true);
-    var col =document.getElementsByClassName(".color");  }
+ }
 
   scroll = (): void => {
 
    let scrollHeigth;
-
+   document.body.style.setProperty('--navbar-scroll-text', "#6c0606");
    if(window.innerWidth < 350){
     scrollHeigth = 150;
    }else if(window.innerWidth < 500 && window.innerWidth > 350){
@@ -30,8 +30,8 @@ export class NavBarComponent implements OnInit {
    }
 
     if(window.scrollY >= scrollHeigth){
-      document.body.style.setProperty('--navbar-scroll', "white");
-      document.body.style.setProperty('--navbar-scroll-text', "black");
+      document.body.style.setProperty('--navbar-scroll', "rgba(107,6,6,0.9)");
+      document.body.style.setProperty('--navbar-scroll-text', "white");
       document.body.style.setProperty('--navbar-scroll-shadow', "0px 6px 12px -5px #000000");
     }else if(window.scrollY < scrollHeigth){
       document.body.style.setProperty('--navbar-scroll', "transparent");

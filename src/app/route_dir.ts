@@ -14,7 +14,5 @@ export const rt:Routes= [
     { path: 'Services', component: ServicesComponent },
     { path: 'Contact', component: ContactComponent },
     { path: 'Education', component: EducationComponent },
-    { path: 'Failed', component: FailedComponent },
-    {path: '', redirectTo: '/Intro', pathMatch: 'full'},
-    { path: '**', component: IntroComponent },
+    { path: '**', component: FailedComponent },
 ]

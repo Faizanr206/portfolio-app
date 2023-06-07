@@ -4,3 +4,13 @@
     text-align: center;
     position: relative;
 }
+.sw-js-blob-svg{
+    position: relative;
+    top: 50;
+}
+.rounded{
+    position:absolute;
+    width: 109%;
+    height: 69%;
+}
+

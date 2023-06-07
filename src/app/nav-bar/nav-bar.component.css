@@ -2,6 +2,7 @@ body{
     --navbar-scroll: transparent; 
     --navbar-scroll-text: white !important;
     --navbar-scroll-shadow: none;
+    --navbar-scroll-background:black;
     font-family: Arial, Helvetica, sans-serif
 
   }
@@ -10,7 +11,11 @@ body{
     transition: background-color 1s ease;
     -webkit-box-shadow: var(--navbar-scroll-shadow);
     box-shadow: var(--navbar-scroll-shadow);
-  }
+    background-color: var(--navbar-scroll-background)!important;  }
   .navbar a{
     color: var(--navbar-scroll-text)!important ;
+  }
+  .navbar:hover{
+    
+    background-color: none;
   }
